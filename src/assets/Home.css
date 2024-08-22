@@ -1,0 +1,36 @@
+.home-container {
+  background-color: rgba(252, 252, 18, 0.898);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-container {
+  display: flex;
+  gap: 50px;
+}
+
+.item-container h1 {
+  font-size: 50px;
+}
+
+.diary {
+  display: flex;
+  flex-direction: column;
+}
+
+.diary img {
+  width: 220px;
+  height: auto;
+  cursor: pointer;
+  transition: transfrom 0.3s ease-out;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.diary span {
+  margin-left: 14px;
+}

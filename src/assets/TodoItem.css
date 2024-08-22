@@ -1,0 +1,23 @@
+.todolist {
+  display: flex;
+  align-items: center;
+}
+
+.todolist span {
+  margin-bottom: 8px;
+}
+
+.todolist input {
+  margin-left: auto;
+  width: 20px;
+}
+
+.todolist button {
+  margin-left: 10px;
+  border: 2px solid rgba(201, 52, 52, 0.768);
+  border-radius: 7px;
+  background-color: rgba(201, 52, 52, 0.768);
+  color: white;
+  cursor: pointer;
+  transition: tansform 0.3 ease-out;
+}
