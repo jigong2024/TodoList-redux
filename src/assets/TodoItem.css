@@ -21,3 +21,69 @@
   cursor: pointer;
   transition: tansform 0.3 ease-out;
 }
+
+네,
+이
+  CSS도
+  아이폰
+  13
+  크기에
+  맞춰
+  반응형으로
+  수정해
+  드리겠습니다.
+  기존
+  CSS에
+  미디어
+  쿼리를
+  추가하여
+  작은
+  화면에서도
+  잘
+  보이도록
+  하겠습니다.
+  cssCopy.todolist {
+  display: flex;
+  align-items: center;
+}
+
+.todolist span {
+  margin-bottom: 8px;
+}
+
+.todolist input {
+  margin-left: auto;
+  width: 20px;
+}
+
+.todolist button {
+  margin-left: 10px;
+  border: 2px solid rgba(201, 52, 52, 0.768);
+  border-radius: 7px;
+  background-color: rgba(201, 52, 52, 0.768);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease-out;
+}
+
+/* 아이폰 13 크기에 맞춘 반응형 스타일 */
+@media screen and (max-width: 390px) {
+  .todolist {
+    padding: 2px 0;
+  }
+
+  .todolist span {
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+
+  .todolist input {
+    margin-right: 10px;
+  }
+
+  .todolist button {
+    margin-left: 0;
+    padding: 2px 5px;
+  }
+}

@@ -34,3 +34,33 @@ img:hover {
 .diary span {
   margin-left: 14px;
 }
+
+/* 아이폰 13 크기에 맞춘 반응형 스타일 */
+@media screen and (max-width: 390px) {
+  .home-container {
+    padding: 20px;
+  }
+
+  .item-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .item-container h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .diary {
+    align-items: center;
+  }
+
+  .diary img {
+    width: 180px;
+  }
+
+  .diary span {
+    margin: 0 15px 0 0;
+    text-align: center;
+  }
+}

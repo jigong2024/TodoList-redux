@@ -81,3 +81,136 @@ button:hover {
   margin-top: 20px;
   background-color: rgba(255, 255, 255, 0.969);
 }
+
+네,이css도아이폰13크기(약 390px)에맞춰반응형으로수정해드리겠습니다.기존CSS에다음과같은미디어쿼리를추가하면됩니다: cssCopy.background {
+  background-color: rgba(216, 216, 68, 0.804);
+  height: 100vh;
+}
+
+.todo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.book {
+  width: 80px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease-out;
+  position: relative;
+}
+
+.book:hover {
+  transform: scale(1.1);
+}
+
+.Home {
+  margin-left: 25px;
+}
+
+.input-container {
+  display: flex;
+  width: 100vw;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container input {
+  width: 500px;
+  height: 20px;
+  margin-left: 50px;
+  border: 2px solid black;
+  border-radius: 7px;
+}
+
+.input-container button {
+  width: 50px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 7px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease-out;
+}
+
+button:hover {
+  transform: scale(0.9);
+}
+
+.threebtns {
+  display: flex;
+  gap: 20px;
+}
+
+.threebtns button {
+  border: 2px solid black;
+  border-radius: 7px;
+  background-color: rgba(0, 0, 0, 0.715);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease-out;
+}
+
+.list-container {
+  margin-left: 45px;
+  padding: 20px;
+  border: 3px ridge black;
+  border-radius: 8px;
+  width: 60%;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.969);
+}
+
+/* 아이폰 13 크기에 맞춘 반응형 스타일 */
+@media screen and (max-width: 390px) {
+  .todo-container {
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .book {
+    width: 60px;
+  }
+
+  .Home {
+    margin-left: 13px;
+    text-align: center;
+  }
+
+  .input-container {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .input-container input {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  .input-container button {
+    margin-left: 225px;
+    width: 25%;
+  }
+
+  .threebtns {
+    width: 60%;
+    justify-content: center;
+  }
+
+  .threebtns button {
+    width: 45%;
+    padding: 10px;
+  }
+
+  .list-container {
+    margin-left: 0;
+    width: 90%;
+    padding: 15px;
+  }
+}
